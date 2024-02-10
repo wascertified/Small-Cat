@@ -3,7 +3,7 @@ from discord.ext import commands
 import yaml, random, os, asyncio, requests
 from commands.catinfo.cog import info
 
-with open("cat.yml", "r") as ymlfile:
+with open("cat.yml", "r") as ymlfile: # change if using the file path!
     config = yaml.load(ymlfile, Loader=yaml.FullLoader)
 
 global cat_token, cat_prefix, version, cat_name
